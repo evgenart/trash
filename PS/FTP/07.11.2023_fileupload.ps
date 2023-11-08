@@ -1,0 +1,5 @@
+#ftp file upload
+
+$client = New-Object System.Net.WebClient
+$client.Credentials = New-Object System.Net.NetworkCredential("username", "password")
+$client.UploadFile("ftp://ip.ip.ip.ip/Routing_Segregation_Diagram_2023.vsdx", "C:\Users\myuser\Desktop\Routing_Segregation_Diagram_2023.vsdx")
